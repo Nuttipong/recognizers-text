@@ -16,14 +16,7 @@ namespace RecognizersTextApp
     [Config(typeof(Config))]
     public class DateTimeRecognizerWrapper
     {
-        private class Config : ManualConfig
-        {
-            public Config()
-            {
-                Add(Job.Dry);
-            }
-        }
-
+        private readonly List<SpecModel> SpecModelList = new List<SpecModel>();
         private readonly Dictionary<string, string> Languages = new Dictionary<string, string>()
         {
             { Culture.Chinese, "Chinese" },
@@ -38,55 +31,58 @@ namespace RecognizersTextApp
             { Culture.Portuguese, "Portuguese" },
             { Culture.Spanish, "Spanish" }
         };
+        private class Config : ManualConfig
+        {
+            public Config()
+            {
+                Add(Job.Dry);
+            }
+        }
 
-        private readonly IList<SpecModel> SpecModelList;
 
         public DateTimeRecognizerWrapper()
         {
-            var t1 = Task.Run(() => GetDateTimeSpec(Culture.English));
-            var t2 = Task.Run(() => GetDateTimeSpec(Culture.Chinese));
-            var t3 = Task.Run(() => GetDateTimeSpec(Culture.Dutch));
-            var t4 = Task.Run(() => GetDateTimeSpec(Culture.EnglishOthers));
-            var t5 = Task.Run(() => GetDateTimeSpec(Culture.French));
-            var t6 = Task.Run(() => GetDateTimeSpec(Culture.German));
-            var t7 = Task.Run(() => GetDateTimeSpec(Culture.Italian));
-            var t8 = Task.Run(() => GetDateTimeSpec(Culture.Japanese));
-            var t9 = Task.Run(() => GetDateTimeSpec(Culture.Korean));
-            var t10 = Task.Run(() => GetDateTimeSpec(Culture.Portuguese));
-            var t11 = Task.Run(() => GetDateTimeSpec(Culture.Spanish));
-            Task.WaitAll(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11);
-            SpecModelList = MergeResults(t1.Result, 
-                t2.Result,
-                t3.Result, 
-                t4.Result, 
-                t5.Result, 
-                t6.Result,
-                t7.Result, 
-                t8.Result, 
-                t9.Result, 
-                t10.Result,
-                t11.Result).ToList();
+            SetSpecModel();
         }
 
         [Benchmark]
         [ArgumentsSource(nameof(Data))]
-        public void RecognizeDateTime(string subMethod, string lang, string text, int scale)
+        public void RecognizeDateTime(string subMethod, string lang, string text, string scale)
         {
             DateTimeRecognizer.RecognizeDateTime(text, lang);
         }
 
         public IEnumerable<object[]> Data()
         {
-            yield return new object[] { "DateExtractor", Culture.English, ComposeText("DateExtractor", Culture.English, 1), 1 };
-            yield return new object[] { "DateExtractor", Culture.English, ComposeText("DateExtractor", Culture.English, 10), 10 };
-            yield return new object[] { "MergedExtractor", Culture.English, ComposeText("MergedExtractor", Culture.English, 1), 1 };
-            yield return new object[] { "MergedExtractor", Culture.English, ComposeText("MergedExtractor", Culture.English, 10), 10 };
-          
+            //var a = new int[] { 1, 10 };
+            //foreach (var b in a)
+            //{
+            //    foreach (var c in a)
+            //    {
+            //        yield return new object[] { "DateExtractor", Culture.English, ComposeText("DateExtractor", Culture.English, 1), 1 };
+            //    }
+            //}
 
-            yield return new object[] { "DateExtractor", Culture.Chinese, ComposeText("DateExtractor", Culture.Chinese, 1), 1 };
-            yield return new object[] { "DateExtractor", Culture.Chinese, ComposeText("DateExtractor", Culture.Chinese, 10), 10 };
-            yield return new object[] { "MergedExtractor", Culture.Chinese, ComposeText("MergedExtractor", Culture.Chinese, 1), 1 };
-            yield return new object[] { "MergedExtractor", Culture.Chinese, ComposeText("MergedExtractor", Culture.Chinese, 10), 10 };
+            foreach (var lang in Languages)
+            {
+                var subMethods = SpecModelList.Where(m => m.Lang == lang.Key);
+                if (subMethods.Any())
+                {
+                    foreach (var subMethod in subMethods)
+                    {
+                        var scales = new int[] { 1 };
+                        foreach (var scale in scales)
+                        {
+                            yield return new object[] {
+                                subMethod.Method,
+                                lang.Key,
+                                ComposeText(subMethod.Method, lang.Key, scale),
+                                $"x{scale}"
+                            };
+                        }
+                    }
+                }
+            }
         }
 
         private string ComposeText(string method, string lang, int scale)
@@ -127,6 +123,28 @@ namespace RecognizersTextApp
         private IEnumerable<SpecModel> MergeResults(params IList<SpecModel>[] results)
         {
             return results.SelectMany(o => o);
+        }
+
+        private void SetSpecModel()
+        {
+            var tasks = new Task<IList<SpecModel>>[] {
+                Task.Run(() => GetDateTimeSpec(Culture.English)),
+                Task.Run(() => GetDateTimeSpec(Culture.Chinese)),
+                Task.Run(() => GetDateTimeSpec(Culture.Dutch)),
+                Task.Run(() => GetDateTimeSpec(Culture.EnglishOthers)),
+                Task.Run(() => GetDateTimeSpec(Culture.French)),
+                Task.Run(() => GetDateTimeSpec(Culture.German)),
+                Task.Run(() => GetDateTimeSpec(Culture.Italian)),
+                Task.Run(() => GetDateTimeSpec(Culture.Japanese)),
+                Task.Run(() => GetDateTimeSpec(Culture.Korean)),
+                Task.Run(() => GetDateTimeSpec(Culture.Portuguese)),
+                Task.Run(() => GetDateTimeSpec(Culture.Spanish))
+            };
+            Task.WaitAll(tasks);
+            foreach (var t in tasks)
+            {
+                SpecModelList.AddRange(MergeResults(t.Result));
+            }
         }
     }
 

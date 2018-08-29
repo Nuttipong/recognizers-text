@@ -7,11 +7,10 @@ namespace RecognizersTextApp
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Recognizer's Sample console application!");
-            Console.WriteLine();
-
             var summary = BenchmarkRunner.Run<DateTimeRecognizerWrapper>();
             Console.WriteLine(summary.AllRuntimes);
+            Console.WriteLine("Report record in bin\\Release\\BenchmarkDotNet.Artifacts\results path.");
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
