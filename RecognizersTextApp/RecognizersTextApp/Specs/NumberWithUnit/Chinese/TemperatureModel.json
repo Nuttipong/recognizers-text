@@ -1,0 +1,139 @@
+[{
+  "Input": "设置恒温器为85度",
+  "Results": [
+    {
+      "Text": "85度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "85",
+        "unit": "Degree"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "把温度升高5度",
+  "Results": [
+    {
+      "Text": "5度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "5",
+        "unit": "Degree"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "正常的温度是华氏温度98.6度",
+  "Results": [
+    {
+      "Text": "华氏温度98.6度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "98.6",
+        "unit": "F"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "华氏温度100度",
+  "Results": [
+    {
+      "Text": "华氏温度100度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "100",
+        "unit": "F"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "20摄氏度",
+  "Results": [
+    {
+      "Text": "20摄氏度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "20",
+        "unit": "C"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "外面的温度是98度",
+  "Results": [
+    {
+      "Text": "98度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "98",
+        "unit": "Degree"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "你能把华氏温度51度转换为摄氏度吗",
+  "Results": [
+    {
+      "Text": "华氏温度51度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "51",
+        "unit": "F"
+      }
+    },
+    {
+      "Text": "摄氏度",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "C"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Annatalk请给我一些数目",
+  "Results": []
+}
+,
+{
+  "Input": "他烧到了39°C那么高",
+  "Results": [
+    {
+      "Text": "39°C",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "39",
+        "unit": "C"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "温度的单位是°C吗",
+  "Results": [
+    {
+      "Text": "°C",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "C"
+      }
+    }
+  ]
+}
+]

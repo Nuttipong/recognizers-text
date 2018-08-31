@@ -1,0 +1,273 @@
+[{
+  "Input": "setimo",
+  "Results": [
+    {
+      "Text": "setimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "7"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "quadragesimo setimo",
+  "Results": [
+    {
+      "Text": "quadragesimo setimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "47"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "tricentésimo quadragésima sétima",
+  "Results": [
+    {
+      "Text": "tricentésimo quadragésima sétima",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "347"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "dois milesimo tricentesimo quadragesimo setimo",
+  "Results": [
+    {
+      "Text": "dois milesimo tricentesimo quadragesimo setimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "2347"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "cinquenta e dois milesimo tricentesimo quadragesimo setimo",
+  "Results": [
+    {
+      "Text": "cinquenta e dois milesimo tricentesimo quadragesimo setimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "52347"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "milesimo quingentesimo vigesimo terceiro",
+  "Results": [
+    {
+      "Text": "milesimo quingentesimo vigesimo terceiro",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "1523"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "vigesimo quinto",
+  "Results": [
+    {
+      "Text": "vigesimo quinto",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "25"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "vigesimo primeiro",
+  "Results": [
+    {
+      "Text": "vigesimo primeiro",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "21"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "centesimo vigesimo quinto",
+  "Results": [
+    {
+      "Text": "centesimo vigesimo quinto",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "125"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "ducentesimo",
+  "Results": [
+    {
+      "Text": "ducentesimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "200"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "21o",
+  "Results": [
+    {
+      "Text": "21o",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "21"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "30a",
+  "Results": [
+    {
+      "Text": "30a",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "30"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "2a",
+  "Results": [
+    {
+      "Text": "2a",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "2"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "undecimo",
+  "Results": [
+    {
+      "Text": "undecimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "11"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "décimo primeiro",
+  "Results": [
+    {
+      "Text": "décimo primeiro",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "11"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "vigesimo",
+  "Results": [
+    {
+      "Text": "vigesimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "20"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "centesimo",
+  "Results": [
+    {
+      "Text": "centesimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "100"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "vinte e dois milesimo",
+  "Results": [
+    {
+      "Text": "vinte e dois milesimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "22000"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "quatrocentos e cinquenta e dois milesimo tricentesimo quadragesimo setimo",
+  "Results": [
+    {
+      "Text": "quatrocentos e cinquenta e dois milesimo tricentesimo quadragesimo setimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "452347"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "três milhões quatrocentos e cinquenta e dois milésimo tricentesimo quadragesimo setimo",
+  "Results": [
+    {
+      "Text": "três milhões quatrocentos e cinquenta e dois milésimo tricentesimo quadragesimo setimo",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "3452347"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "tres mil quinhentos e vinte e quatro milhoes seiscentos e noventa e quatro milesimo sexcentesimo septuagesimo terceiro",
+  "Results": [
+    {
+      "Text": "tres mil quinhentos e vinte e quatro milhoes seiscentos e noventa e quatro milesimo sexcentesimo septuagesimo terceiro",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "3524694673"
+      }
+    }
+  ]
+}
+]

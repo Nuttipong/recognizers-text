@@ -1,0 +1,212 @@
+[{
+  "Input": "three trillionth",
+  "Results": [
+    {
+      "Text": "three trillionth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "3000000000000"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "a trillionth",
+  "Results": []
+}
+,
+{
+  "Input": "a hundred trillionth",
+  "Results": [
+    {
+      "Text": "a hundred trillionth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "100000000000000"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "11th",
+  "Results": [
+    {
+      "Text": "11th",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "11"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "21st",
+  "Results": [
+    {
+      "Text": "21st",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "21"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "30th",
+  "Results": [
+    {
+      "Text": "30th",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "30"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "2nd",
+  "Results": [
+    {
+      "Text": "2nd",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "2"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "eleventh",
+  "Results": [
+    {
+      "Text": "eleventh",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "11"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "twentieth",
+  "Results": [
+    {
+      "Text": "twentieth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "20"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "twenty-fifth",
+  "Results": [
+    {
+      "Text": "twenty-fifth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "25"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "twenty-first",
+  "Results": [
+    {
+      "Text": "twenty-first",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "21"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "one hundred twenty fifth",
+  "Results": [
+    {
+      "Text": "one hundred twenty fifth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "125"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "one hundred twenty-fifth",
+  "Results": [
+    {
+      "Text": "one hundred twenty-fifth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "125"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "trillionth",
+  "Results": [
+    {
+      "Text": "trillionth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "1000000000000"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "twenty-one trillion and three hundred twenty second",
+  "Results": [
+    {
+      "Text": "twenty-one trillion and three hundred twenty second",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "21000000000322"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "two hundredth",
+  "Results": [
+    {
+      "Text": "two hundredth",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "200"
+      }
+    }
+  ]
+},
+{
+  "Input": "Book a first class seat to seattle",
+  "Results": [
+    {
+      "Text": "first",
+      "TypeName": "ordinal",
+      "Resolution": {
+        "value": "1"
+      }
+    }
+  ]
+}
+]

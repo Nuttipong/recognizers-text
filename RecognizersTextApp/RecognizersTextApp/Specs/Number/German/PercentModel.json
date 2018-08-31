@@ -1,0 +1,182 @@
+[
+  {
+    "Input": "100%",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "100%",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": " 100% ",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "100%",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": " 100 Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "100 Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "240 Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "240 Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "240%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "zwanzig Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "zwanzig Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "20%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "dreißig Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "dreißig Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "30%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "einhundert Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "einhundert Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "10 Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "10 Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "10%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "siebenunddreißig Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "siebenunddreißig Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "37%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "einhundertneunundneunzig Prozent",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "einhundertneunundneunzig Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "199%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "Wenn er nicht einhundert Prozent gibt, wird er damit nicht mehr rechtzeitig fertig",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "einhundert Prozent",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "Input": "Der Umsatz sank in der zweiten Jahreshälfte um 27% auf 300 000 GBP",
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Results": [
+      {
+        "Text": "27%",
+        "TypeName": "percentage",
+        "Resolution": {
+          "value": "27%"
+        }
+      }
+    ]
+  },
+  {
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Input": "Sie können zu http://proquest.umi.com/pqdweb?RQT=305&SQ=issn%280024%2D9114%29%20and%20%28ti%28Using%203D%20CAD%20to%20design%20a%20dog%29%20or%20startpage%28158%29%29%20and%20volume%2872%29%20and%20issue%289%29%20and%20pdn%28%3E01%2F01%2F2000%20AND%20%3C12%2F31%2F2000%29&clientId=17859 für mehr Details gehen",
+    "Results": []
+  },
+  {
+    "NotSupportedByDesign": "python",
+    "NotSupported": "javascript",
+    "Input": "Sie können zu https://www.test.com/search?q=30%25%2020% für mehr Details gehen",
+    "Results": []
+  }
+]

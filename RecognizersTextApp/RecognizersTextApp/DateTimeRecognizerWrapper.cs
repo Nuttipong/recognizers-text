@@ -9,6 +9,7 @@ using BenchmarkDotNet.Jobs;
 using Microsoft.Recognizers.Text;
 using Microsoft.Recognizers.Text.DateTime;
 using Newtonsoft.Json;
+using RecognizersTextApp.Model;
 
 namespace RecognizersTextApp
 {
@@ -54,15 +55,6 @@ namespace RecognizersTextApp
 
         public IEnumerable<object[]> Data()
         {
-            //var a = new int[] { 1, 10 };
-            //foreach (var b in a)
-            //{
-            //    foreach (var c in a)
-            //    {
-            //        yield return new object[] { "DateExtractor", Culture.English, ComposeText("DateExtractor", Culture.English, 1), 1 };
-            //    }
-            //}
-
             foreach (var lang in Languages)
             {
                 var subMethods = SpecModelList.Where(m => m.Lang == lang.Key);
@@ -146,13 +138,5 @@ namespace RecognizersTextApp
                 SpecModelList.AddRange(MergeResults(t.Result));
             }
         }
-    }
-
-    public class SpecModel
-    {
-        public string Input { get; set; }
-        public IEnumerable<object> Results { get; set; }
-        public string Lang { get; set; }
-        public string Method { get; set; }
     }
 }

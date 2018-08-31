@@ -1,0 +1,644 @@
+[{
+  "Input": "A temperatura externa é de 40 graus Celsius",
+  "Results": [
+    {
+      "Text": "40 graus Celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "40",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Faz 90 fahrenheit no Texas",
+  "Results": [
+    {
+      "Text": "90 fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "90",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Converter 10 celsius em fahrenheit",
+  "Results": [
+    {
+      "Text": "10 celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "10",
+        "unit": "Grau Celsius"
+      }
+    },
+    {
+      "Text": "fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "-5 graus Fahrenheit",
+  "Results": [
+    {
+      "Text": "-5 graus Fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "-5",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "6 graus centígrados",
+  "Results": [
+    {
+      "Text": "6 graus centígrados",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "6",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "98,6 graus f é uma temperatura normal",
+  "Results": [
+    {
+      "Text": "98,6 graus f",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "98,6",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Ajuste a temperatura para 30 graus celsius",
+  "Results": [
+    {
+      "Text": "30 graus celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "30",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "A temperatura normal é 98,6 graus Fahrenheit",
+  "Results": [
+    {
+      "Text": "98,6 graus Fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "98,6",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "100 graus f",
+  "Results": [
+    {
+      "Text": "100 graus f",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "100",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "20 Graus c",
+  "Results": [
+    {
+      "Text": "20 Graus c",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "20",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "100 °f",
+  "Results": [
+    {
+      "Text": "100 °f",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "100",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "20 °c",
+  "Results": [
+    {
+      "Text": "20 °c",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "20",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "100,2 Graus Fahrenheit é baixo",
+  "Results": [
+    {
+      "Text": "100,2 Graus Fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "100,2",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "34,9 centígrado pra fahrenheit",
+  "Results": [
+    {
+      "Text": "34,9 centígrado",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "34,9",
+        "unit": "Grau Celsius"
+      }
+    },
+    {
+      "Text": "fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "converter 200 celsius em fahrenheit",
+  "Results": [
+    {
+      "Text": "200 celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "200",
+        "unit": "Grau Celsius"
+      }
+    },
+    {
+      "Text": "fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "convertir 200 K em fahrenheit",
+  "Results": [
+    {
+      "Text": "200 K",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "200",
+        "unit": "Kelvin"
+      }
+    },
+    {
+      "Text": "fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "fahrenheit pra celsius, quantos celsius são 101 fahrenheit",
+  "Results": [
+    {
+      "Text": "101 fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "101",
+        "unit": "Grau Fahrenheit"
+      }
+    },
+    {
+      "Text": "fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Fahrenheit"
+      }
+    },
+    {
+      "Text": "celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    },
+    {
+      "Text": "celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "50 graus centígrados celsius em fahrenheit",
+  "Results": [
+    {
+      "Text": "50 graus centígrados",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "50",
+        "unit": "Grau Celsius"
+      }
+    },
+    {
+      "Text": "celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    },
+    {
+      "Text": "fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Poderias converter 51 fahrenheit em graus celsius",
+  "Results": [
+    {
+      "Text": "51 fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "51",
+        "unit": "Grau Fahrenheit"
+      }
+    },
+    {
+      "Text": "graus celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Converter 106 graus Fahrenheit em graus centígrados",
+  "Results": [
+    {
+      "Text": "106 graus Fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "106",
+        "unit": "Grau Fahrenheit"
+      }
+    },
+    {
+      "Text": "graus centígrados",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Converter 106 K em graus centígrados",
+  "Results": [
+    {
+      "Text": "106 K",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "106",
+        "unit": "Kelvin"
+      }
+    },
+    {
+      "Text": "graus centígrados",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Converter 45 graus Fahrenheit a Celsius",
+  "Results": [
+    {
+      "Text": "45 graus Fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "45",
+        "unit": "Grau Fahrenheit"
+      }
+    },
+    {
+      "Text": "Celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Como convertir - 20 graus Fahrenheit para Celsius",
+  "Results": [
+    {
+      "Text": "- 20 graus Fahrenheit",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "-20",
+        "unit": "Grau Fahrenheit"
+      }
+    },
+    {
+      "Text": "Celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": null,
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "10,5 celsius",
+  "Results": [
+    {
+      "Text": "10,5 celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "10,5",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "20 graus celsius",
+  "Results": [
+    {
+      "Text": "20 graus celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "20",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "20,3 celsius",
+  "Results": [
+    {
+      "Text": "20,3 celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "20,3",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "34,5 celsius",
+  "Results": [
+    {
+      "Text": "34,5 celsius",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "34,5",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "A temperatura exterior é de 98 graus",
+  "Results": [
+    {
+      "Text": "98 graus",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "98",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Ajuste o termostato em 85 °",
+  "Results": [
+    {
+      "Text": "85 °",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "85",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Ajuste o termostato em 85°",
+  "Results": [
+    {
+      "Text": "85°",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "85",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Aumente a temperatura em 5 graus",
+  "Results": [
+    {
+      "Text": "5 graus",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "5",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Ajuste a temperatura para 70 graus f",
+  "Results": [
+    {
+      "Text": "70 graus f",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "70",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Aumentar a temperatura em 20 grau",
+  "Results": [
+    {
+      "Text": "20 grau",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "20",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Ajuste a temperatura a 100 graus",
+  "Results": [
+    {
+      "Text": "100 graus",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "100",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Ajuste a temperatura a 100 Kelvin",
+  "Results": [
+    {
+      "Text": "100 Kelvin",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "100",
+        "unit": "Kelvin"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Mantenha a temperatura de 75 graus f",
+  "Results": [
+    {
+      "Text": "75 graus f",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "75",
+        "unit": "Grau Fahrenheit"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Deixe que a temperatura fique em 40 centígrados",
+  "Results": [
+    {
+      "Text": "40 centígrados",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "40",
+        "unit": "Grau Celsius"
+      }
+    }
+  ]
+}
+,
+{
+  "Input": "Deixe a temperatura em 50 graus.",
+  "Results": [
+    {
+      "Text": "50 graus",
+      "TypeName": "temperature",
+      "Resolution": {
+        "value": "50",
+        "unit": "Grau"
+      }
+    }
+  ]
+}
+]

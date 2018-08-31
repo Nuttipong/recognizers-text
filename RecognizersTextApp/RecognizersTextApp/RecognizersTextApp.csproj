@@ -57,6 +57,9 @@
     <Reference Include="Microsoft.Recognizers.Text, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Recognizers.Text.1.0.11\lib\net462\Microsoft.Recognizers.Text.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Recognizers.Text.Choice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Recognizers.Text.Choice.1.0.11\lib\net462\Microsoft.Recognizers.Text.Choice.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Recognizers.Text.DateTime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Recognizers.Text.DateTime.1.0.11\lib\net462\Microsoft.Recognizers.Text.DateTime.dll</HintPath>
     </Reference>
@@ -65,6 +68,9 @@
     </Reference>
     <Reference Include="Microsoft.Recognizers.Text.NumberWithUnit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Recognizers.Text.NumberWithUnit.1.0.11\lib\net462\Microsoft.Recognizers.Text.NumberWithUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Recognizers.Text.Sequence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Recognizers.Text.Sequence.1.0.11\lib\net462\Microsoft.Recognizers.Text.Sequence.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.4.5.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
@@ -225,13 +231,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateTimeRecognizerWrapper.cs" />
+    <Compile Include="Common\CommonService.cs" />
+    <Compile Include="INumberRecognizerMeasure.cs" />
+    <Compile Include="Methods\DateExtractorWrapper.cs" />
+    <Compile Include="Methods\DateParserWrapper.cs" />
+    <Compile Include="Methods\DatePeriodExtractorWrapper.cs" />
+    <Compile Include="Model\SpecModel.cs" />
+    <Compile Include="NumberRecognizerMeasure.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Specs\Choice\Chinese\BooleanModel.json" />
+    <None Include="Specs\Choice\Dutch\BooleanModel.json" />
+    <None Include="Specs\Choice\English\BooleanModel.json" />
+    <None Include="Specs\Choice\German\BooleanModel.json" />
+    <None Include="Specs\Choice\Japanese\BooleanModel.json" />
+    <None Include="Specs\Choice\Portuguese\BooleanModel.json" />
+    <None Include="Specs\Choice\Spanish\BooleanModel.json" />
     <None Include="Specs\DateTime\Chinese\DateExtractor.json" />
     <None Include="Specs\DateTime\Chinese\DateParser.json" />
     <None Include="Specs\DateTime\Chinese\DatePeriodExtractor.json" />
@@ -266,93 +285,35 @@
     <None Include="Specs\DateTime\Dutch\TimeZoneParser.json" />
     <None Include="Specs\DateTime\EnglishOthers\DateParser.json" />
     <None Include="Specs\DateTime\EnglishOthers\DateTimeModel.json" />
-    <None Include="Specs\DateTime\English\DateExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DatePeriodExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DatePeriodParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeModel.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeModelCalendarMode.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeModelComplexCalendar.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeModelExperimentalMode.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeModelExtendedTypes.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeModelSplitDateAndTime.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimeParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimePeriodExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DateTimePeriodParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DurationExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\DurationParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\HolidayExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\HolidayParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\MergedExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\MergedExtractorSkipFromTo.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\MergedParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\SetExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\SetParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\TimeExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\TimeParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\TimePeriodExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\TimePeriodParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\TimeZoneExtractor.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Specs\DateTime\English\TimeZoneParser.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="Specs\DateTime\English\DateExtractor.json" />
+    <None Include="Specs\DateTime\English\DateParser.json" />
+    <None Include="Specs\DateTime\English\DatePeriodExtractor.json" />
+    <None Include="Specs\DateTime\English\DatePeriodParser.json" />
+    <None Include="Specs\DateTime\English\DateTimeExtractor.json" />
+    <None Include="Specs\DateTime\English\DateTimeModel.json" />
+    <None Include="Specs\DateTime\English\DateTimeModelCalendarMode.json" />
+    <None Include="Specs\DateTime\English\DateTimeModelComplexCalendar.json" />
+    <None Include="Specs\DateTime\English\DateTimeModelExperimentalMode.json" />
+    <None Include="Specs\DateTime\English\DateTimeModelExtendedTypes.json" />
+    <None Include="Specs\DateTime\English\DateTimeModelSplitDateAndTime.json" />
+    <None Include="Specs\DateTime\English\DateTimeParser.json" />
+    <None Include="Specs\DateTime\English\DateTimePeriodExtractor.json" />
+    <None Include="Specs\DateTime\English\DateTimePeriodParser.json" />
+    <None Include="Specs\DateTime\English\DurationExtractor.json" />
+    <None Include="Specs\DateTime\English\DurationParser.json" />
+    <None Include="Specs\DateTime\English\HolidayExtractor.json" />
+    <None Include="Specs\DateTime\English\HolidayParser.json" />
+    <None Include="Specs\DateTime\English\MergedExtractor.json" />
+    <None Include="Specs\DateTime\English\MergedExtractorSkipFromTo.json" />
+    <None Include="Specs\DateTime\English\MergedParser.json" />
+    <None Include="Specs\DateTime\English\SetExtractor.json" />
+    <None Include="Specs\DateTime\English\SetParser.json" />
+    <None Include="Specs\DateTime\English\TimeExtractor.json" />
+    <None Include="Specs\DateTime\English\TimeParser.json" />
+    <None Include="Specs\DateTime\English\TimePeriodExtractor.json" />
+    <None Include="Specs\DateTime\English\TimePeriodParser.json" />
+    <None Include="Specs\DateTime\English\TimeZoneExtractor.json" />
+    <None Include="Specs\DateTime\English\TimeZoneParser.json" />
     <None Include="Specs\DateTime\French\DateExtractor.json" />
     <None Include="Specs\DateTime\French\DateParser.json" />
     <None Include="Specs\DateTime\French\DatePeriodExtractor.json" />
@@ -465,11 +426,98 @@
     <None Include="Specs\DateTime\Spanish\TimeParser.json" />
     <None Include="Specs\DateTime\Spanish\TimePeriodExtractor.json" />
     <None Include="Specs\DateTime\Spanish\TimePeriodParser.json" />
+    <None Include="Specs\NumberWithUnit\Chinese\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Chinese\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\Chinese\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\Chinese\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\Dutch\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Dutch\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\Dutch\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\English\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\English\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\English\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\English\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\French\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\French\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\French\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\French\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\German\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\German\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\German\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\German\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\Italian\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Italian\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\Italian\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\Italian\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\Japanese\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Japanese\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\Korean\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Portuguese\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Portuguese\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\Portuguese\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\Portuguese\TemperatureModel.json" />
+    <None Include="Specs\NumberWithUnit\Spanish\AgeModel.json" />
+    <None Include="Specs\NumberWithUnit\Spanish\CurrencyModel.json" />
+    <None Include="Specs\NumberWithUnit\Spanish\DimensionModel.json" />
+    <None Include="Specs\NumberWithUnit\Spanish\TemperatureModel.json" />
+    <None Include="Specs\Number\Chinese\NumberModel.json" />
+    <None Include="Specs\Number\Chinese\NumberRangeModel.json" />
+    <None Include="Specs\Number\Chinese\NumberRangeModelExperimentalMode.json" />
+    <None Include="Specs\Number\Chinese\OrdinalModel.json" />
+    <None Include="Specs\Number\Chinese\PercentModel.json" />
+    <None Include="Specs\Number\Dutch\NumberModel.json" />
+    <None Include="Specs\Number\Dutch\NumberModelPercentMode.json" />
+    <None Include="Specs\Number\Dutch\NumberRangeModel.json" />
+    <None Include="Specs\Number\Dutch\OrdinalModel.json" />
+    <None Include="Specs\Number\Dutch\PercentModel.json" />
+    <None Include="Specs\Number\Dutch\PercentModelPercentMode.json" />
+    <None Include="Specs\Number\English\NumberModel.json" />
+    <None Include="Specs\Number\English\NumberModelExperimentalMode.json" />
+    <None Include="Specs\Number\English\NumberModelPercentMode.json" />
+    <None Include="Specs\Number\English\NumberRangeModel.json" />
+    <None Include="Specs\Number\English\NumberRangeModelExperimentalMode.json" />
+    <None Include="Specs\Number\English\OrdinalModel.json" />
+    <None Include="Specs\Number\English\PercentModel.json" />
+    <None Include="Specs\Number\English\PercentModelPercentMode.json" />
+    <None Include="Specs\Number\French\NumberModel.json" />
+    <None Include="Specs\Number\French\OrdinalModel.json" />
+    <None Include="Specs\Number\French\PercentModel.json" />
+    <None Include="Specs\Number\German\NumberModel.json" />
+    <None Include="Specs\Number\German\OrdinalModel.json" />
+    <None Include="Specs\Number\German\PercentModel.json" />
+    <None Include="Specs\Number\Italian\NumberModel.json" />
+    <None Include="Specs\Number\Italian\NumberRangeModel.json" />
+    <None Include="Specs\Number\Italian\OrdinalModel.json" />
+    <None Include="Specs\Number\Italian\PercentModel.json" />
+    <None Include="Specs\Number\Japanese\NumberModel.json" />
+    <None Include="Specs\Number\Japanese\NumberRangeModel.json" />
+    <None Include="Specs\Number\Japanese\NumberRangeModelExperimentalMode.json" />
+    <None Include="Specs\Number\Japanese\OrdinalModel.json" />
+    <None Include="Specs\Number\Japanese\PercentModel.json" />
+    <None Include="Specs\Number\Korean\NumberModel.json" />
+    <None Include="Specs\Number\Korean\NumberModelPercentMode.json" />
+    <None Include="Specs\Number\Korean\NumberRangeModel.json" />
+    <None Include="Specs\Number\Korean\OrdinalModel.json" />
+    <None Include="Specs\Number\Korean\PercentModel.json" />
+    <None Include="Specs\Number\Korean\PercentModelPercentMode.json" />
+    <None Include="Specs\Number\Portuguese\NumberModel.json" />
+    <None Include="Specs\Number\Portuguese\OrdinalModel.json" />
+    <None Include="Specs\Number\Portuguese\PercentModel.json" />
+    <None Include="Specs\Number\Spanish\NumberModel.json" />
+    <None Include="Specs\Number\Spanish\OrdinalModel.json" />
+    <None Include="Specs\Number\Spanish\PercentModel.json" />
+    <None Include="Specs\Sequence\English\EmailModel.json" />
+    <None Include="Specs\Sequence\English\HashtagModel.json" />
+    <None Include="Specs\Sequence\English\IpAddressModel.json" />
+    <None Include="Specs\Sequence\English\MentionModel.json" />
+    <None Include="Specs\Sequence\English\PhoneNumberModel.json" />
+    <None Include="Specs\Sequence\English\URLModel.json" />
+    <None Include="Specs\Sequence\Portuguese\IpAddressModel.json" />
+    <None Include="Specs\Sequence\Portuguese\PhoneNumberModel.json" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
