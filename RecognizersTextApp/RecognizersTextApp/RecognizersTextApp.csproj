@@ -231,15 +231,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\CommonService.cs" />
+    <Compile Include="ChoiceRecognizerMeasure.cs" />
+    <Compile Include="DateTimeRecognizerMeasure.cs" />
+    <Compile Include="IChoiceRecognizerMeasure.cs" />
+    <Compile Include="IDateTimeRecognizerMeasure.cs" />
     <Compile Include="INumberRecognizerMeasure.cs" />
-    <Compile Include="Methods\DateExtractorWrapper.cs" />
-    <Compile Include="Methods\DateParserWrapper.cs" />
-    <Compile Include="Methods\DatePeriodExtractorWrapper.cs" />
+    <Compile Include="INumberWithUnitRecognizerMeasure.cs" />
+    <Compile Include="ISequenceRecognizerMeasure.cs" />
+    <Compile Include="Model\DataModel.cs" />
     <Compile Include="Model\SpecModel.cs" />
     <Compile Include="NumberRecognizerMeasure.cs" />
+    <Compile Include="NumberWithUnitRecognizerMeasure.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceRecognizerMeasure.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

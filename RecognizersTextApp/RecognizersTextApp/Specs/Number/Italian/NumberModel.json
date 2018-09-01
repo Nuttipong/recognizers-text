@@ -1,18 +1,4 @@
-[{
-  "Input": "192.",
-  "NotSupported": "dotnet",
-  "NotSupportedByDesign": "python,javascript,python",
-  "Results": [
-    {
-      "Text": "192",
-      "TypeName": "number",
-      "Resolution": {
-        "value": "192"
-      }
-    }
-  ]
-}
-,
+[
 {
   "Input": "192.168.1.2",
   "NotSupported": "dotnet",
