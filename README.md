@@ -99,8 +99,8 @@ number, number with unit, sequence and choice from the text. So we want to measu
 
 ## How to maesure
   
-    build the solution manually and then choose solution configuration as Release and Start(F5). The results we generate in this path
-    bin\Release\BenchmarkDotNet.Artifacts\results
+    build the solution manually and then choose solution configuration as Release and Start(F5). The results we generated in
+    bin\Release\BenchmarkDotNet.Artifacts\results path.
 
 ## How to represent data
   
