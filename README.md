@@ -5,10 +5,6 @@
     git clone git@github.com:Nuttipong/recognizers-text.git
     cd RecognizersTextApp
 
-## Setup
-  
-    build the solution manually and then choose solution configuration as Release and Start(F5)
-
 ## What we do experiment as below
 
 #### Constraint
@@ -65,6 +61,11 @@
         void RecognizeBoolean(string text, string culture, string scale, string typeName);
     }
 ```
+
+## How to maesure
+  
+    build the solution manually and then choose solution configuration as Release and Start(F5). The results we generate in this path
+    bin\Release\BenchmarkDotNet.Artifacts\results
 
 ## Dependencies
 
