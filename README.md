@@ -9,7 +9,7 @@
   
     build the solution manually and then choose solution configuration as Release and Start(F5)
 
-## What we do experiment
+## What we do experiment is increase variable text sizes multiply by 1, 10 and 100 and also support multiple langauges.
 
 ### Microsoft.Recognizers.Text.Number
 ```
