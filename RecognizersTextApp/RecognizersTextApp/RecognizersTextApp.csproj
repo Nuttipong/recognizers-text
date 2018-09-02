@@ -249,6 +249,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="SampleResult\RecognizersTextApp.ChoiceRecognizerMeasure-report.csv" />
+    <None Include="SampleResult\RecognizersTextApp.DateTimeRecognizerMeasure-report.csv" />
+    <None Include="SampleResult\RecognizersTextApp.NumberRecognizerMeasure-report.csv" />
+    <None Include="SampleResult\RecognizersTextApp.NumberWithUnitRecognizerMeasure-report.csv" />
+    <None Include="SampleResult\RecognizersTextApp.SequenceRecognizerMeasure-report.csv" />
     <None Include="Specs\Choice\Chinese\BooleanModel.json" />
     <None Include="Specs\Choice\Dutch\BooleanModel.json" />
     <None Include="Specs\Choice\English\BooleanModel.json" />
