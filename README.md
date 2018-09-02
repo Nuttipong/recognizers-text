@@ -109,7 +109,7 @@
 ### Sample result
 ![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
 
-## Isuue Founds
+## Issue Founds
 
 * Microsoft.Recognizers.Text.Number:
   Scale x1 => No issue
