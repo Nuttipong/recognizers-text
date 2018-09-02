@@ -109,7 +109,15 @@
 ### Sample result
 Noted: Short way to see the results you can copy all files in SampleResult folder at root project into bin\Release\BenchmarkDotNet.Artifacts\results
 
-![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot-1.png)
+
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot-2.png)
+
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot-3.png)
+
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot-4.png)
+
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot-5.png)
 
 ## Issue Founds
 
