@@ -5,7 +5,7 @@
     git clone git@github.com:Nuttipong/recognizers-text.git
     cd RecognizersTextApp
 
-## What we do experiment as below
+## What we do experiment
 
 #### Constraint
     perform per languages
