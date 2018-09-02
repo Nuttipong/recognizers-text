@@ -9,7 +9,11 @@
   
     build the solution manually and then choose solution configuration as Release and Start(F5)
 
-## What we do experiment is increase variable text sizes multiply by 1, 10 and 100 and also support multiple langauges.
+## What we do experiment as below
+
+#### Constraint
+    perform per languages
+    perform variable text sizes to multiply by 1, 10 and 100
 
 ### Microsoft.Recognizers.Text.Number
 ```
