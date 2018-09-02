@@ -22,18 +22,18 @@ namespace RecognizersTextApp
             var tasks = new Task[]
             {
                 Task.Run(() => SetNumberDictSpec()),
-                //Task.Run(() => SetNumberWithUnitDictSpec()),
-                //Task.Run(() => SetDateTimeDictSpec()),
-                //Task.Run(() => SetSequenceDictSpec()),
-                //Task.Run(() => SetChoiceDictSpec())
+                Task.Run(() => SetNumberWithUnitDictSpec()),
+                Task.Run(() => SetDateTimeDictSpec()),
+                Task.Run(() => SetSequenceDictSpec()),
+                Task.Run(() => SetChoiceDictSpec())
             };
             Task.WaitAll(tasks);
 
             BenchmarkRunner.Run<NumberRecognizerMeasure>();
-            //BenchmarkRunner.Run<NumberWithUnitRecognizerMeasure>();
-            //BenchmarkRunner.Run<DateTimeRecognizerMeasure>();
-            //BenchmarkRunner.Run<SequenceRecognizerMeasure>();
-            //BenchmarkRunner.Run<ChoiceRecognizerMeasure>();
+            BenchmarkRunner.Run<NumberWithUnitRecognizerMeasure>();
+            BenchmarkRunner.Run<DateTimeRecognizerMeasure>();
+            BenchmarkRunner.Run<SequenceRecognizerMeasure>();
+            BenchmarkRunner.Run<ChoiceRecognizerMeasure>();
         }
 
         private static IList<string> GetLanguages(string method)
