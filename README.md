@@ -94,7 +94,7 @@
     npm start or yarn start
     
 ### Samples
-![Screenshot](screenshot.png)
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
 
     
 
