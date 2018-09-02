@@ -3,21 +3,17 @@
 ## Introduce
     
     What I am doing is performance experiment with Microsoft.Recognizers.Text library which is recognition datetime, 
-    number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
+number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
 
 ## What we do experiment is
-    
-    * **.NET Framework (4.6.2)**
-    * **perform per languages.**
-    * **perform variable text sizes to multiply by 1, 10 and 100.**
-    
 
-## Getting Started
+* perform per methods.
+* perform per languages.
+* perform variable text sizes to multiply by 1, 10 and 100.
+* using .NET Framework (4.6.2).
+* for each methods we does iteration 10 times.
 
-    git clone git@github.com:Nuttipong/recognizers-text.git
-    cd RecognizersTextApp
-
-
+## What methods that we do experiment as below
 
 ### Microsoft.Recognizers.Text.Number
 ```
@@ -70,15 +66,11 @@
     }
 ```
 
+## Getting Started
 
-
-
-
-## How to maesure
-  
-    build the solution manually and then choose solution configuration as Release and Start(F5). The results we generate in this path
-    bin\Release\BenchmarkDotNet.Artifacts\results
-
+    git clone git@github.com:Nuttipong/recognizers-text.git
+    cd RecognizersTextApp
+    
 ## Dependencies
 
 * BenchmarkDotNet:
@@ -104,6 +96,11 @@
 
 * Microsoft.Recognizers.Text.Sequence:
 `Install-Package Microsoft.Recognizers.Sequence -Version 1.0.11`
+
+## How to maesure
+  
+    build the solution manually and then choose solution configuration as Release and Start(F5). The results we generate in this path
+    bin\Release\BenchmarkDotNet.Artifacts\results
 
 ## How to represent data
   
