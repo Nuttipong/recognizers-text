@@ -107,9 +107,9 @@
     npm start or yarn start
         
 ### Sample result
-![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
+Noted: Short way to see the results you can copy all files in SampleResult folder at root project into bin\Release\BenchmarkDotNet.Artifacts\results
 
-Noted: Shortway to see the results you can copy all files in SampleResult folder into bin\Release\BenchmarkDotNet.Artifacts\results
+![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
 
 ## Issue Founds
 
