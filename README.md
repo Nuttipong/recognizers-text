@@ -139,7 +139,7 @@ Noted: Short way to see the results you can copy all files in SampleResult folde
 * Microsoft.Recognizers.Text.Choice:
   - Scale x1 => No issue
   - Scale x10 => No issue
-  - Scale x100 => No issue
+  - Scale x100 => Found issue with English language. It take more execution time when text size large compare with other languages.
 
 * Microsoft.Recognizers.Text.Sequence:
   - Scale x1 => No issue
