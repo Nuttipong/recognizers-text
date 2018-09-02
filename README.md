@@ -106,8 +106,8 @@ number, number with unit, sequence and choice from the text. So we want to measu
   
     npm install or yarn install
     npm start or yarn start
-    
-### Sample results
+        
+### Sample result
 ![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
 
     
