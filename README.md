@@ -2,13 +2,14 @@
 
 ## Introduce
     
-    What I am doing is performance experiment with Microsoft.Recognizers.Text library which is recognition datetime, number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
+    What I am doing is performance experiment with Microsoft.Recognizers.Text library which is recognition datetime, 
+    number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
 
 ## What we do experiment is
     
-    * .NET Framework (4.6.2)
-    * perform per languages
-    * perform variable text sizes to multiply by 1, 10 and 100
+    * **.NET Framework (4.6.2)**
+    * **perform per languages.**
+    * **perform variable text sizes to multiply by 1, 10 and 100.**
     
 
 ## Getting Started
