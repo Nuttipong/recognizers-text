@@ -1,9 +1,8 @@
 # Recognizers Text Experiment
 
 ## Introduce
-    
-    What I am doing is performance experiment with Microsoft.Recognizers.Text library which is recognition datetime, 
-number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
+
+    What I am doing is performance experiment with Microsoft.Recognizers.Text library which is recognition datetime, number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
 
 ## What we do experiment is
 
