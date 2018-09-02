@@ -1,1 +1,1 @@
-# [Recognizers Text Experiment]
+# [Recognizers Text Experiment] &middot;
