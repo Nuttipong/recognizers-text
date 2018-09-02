@@ -1,15 +1,22 @@
 # Recognizers Text Experiment
 
+## Introduce
+    
+    What I am doing is performance experiment with Microsoft.Recognizers.Text library which is recognition datetime, number, number with unit, sequence and choice from the text. So we want to measure the execution time for each methods.
+
+## What we do experiment is
+    
+    * .NET Framework (4.6.2)
+    * perform per languages
+    * perform variable text sizes to multiply by 1, 10 and 100
+    
+
 ## Getting Started
 
     git clone git@github.com:Nuttipong/recognizers-text.git
     cd RecognizersTextApp
 
-## What we do experiment
 
-#### Constraint
-    perform per languages
-    perform variable text sizes to multiply by 1, 10 and 100
 
 ### Microsoft.Recognizers.Text.Number
 ```
@@ -61,6 +68,10 @@
         void RecognizeBoolean(string text, string culture, string scale, string typeName);
     }
 ```
+
+
+
+
 
 ## How to maesure
   
