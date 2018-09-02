@@ -122,19 +122,19 @@
   - Scale x100 => Found issue with RecognizeCurrency method. It take more execution time when text size large.
   
 * Microsoft.Recognizers.Text.DateTime:
-  Scale x1 => No issue
-  Scale x10 => No issue
-  Scale x100 => Found issue with Chinese language. It take more execution time when text size large compare with other languages.
+  - Scale x1 => No issue
+  - Scale x10 => No issue
+  - Scale x100 => Found issue with Chinese language. It take more execution time when text size large compare with other languages.
   
 * Microsoft.Recognizers.Text.Choice:
-  Scale x1 => No issue
-  Scale x10 => No issue
-  Scale x100 => Found issue with English language. It take more execution time when text size large compare with other languages.
+  - Scale x1 => No issue
+  - Scale x10 => No issue
+  - Scale x100 => Found issue with English language. It take more execution time when text size large compare with other languages.
 
 * Microsoft.Recognizers.Text.Sequence:
-  Scale x1 => No issue
-  Scale x10 => No issue
-  Scale x100 => No issue
+  - Scale x1 => No issue
+  - Scale x10 => No issue
+  - Scale x100 => No issue
 
 
     
