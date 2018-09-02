@@ -110,5 +110,15 @@ number, number with unit, sequence and choice from the text. So we want to measu
 ### Sample result
 ![alt text](https://github.com/Nuttipong/recognizers-text/blob/master/RecognizersTextApp/RecognizersTextApp/screenshot.png)
 
+## Isuue Founds
+
+* Microsoft.Recognizers.Text.Number:
+  Scale x1 => No issue
+  Scale x10 => 
+  Scale x100 => 
+ 
+
+
+
     
 
