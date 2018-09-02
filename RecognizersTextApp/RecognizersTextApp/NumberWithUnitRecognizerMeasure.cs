@@ -92,9 +92,9 @@ namespace RecognizersTextApp
 
         private void PrepareAgeDataList()
         {
-            foreach (var lang in Program.NumberDict.Keys)
+            foreach (var lang in Program.NumberWithUnitDict.Keys)
             {
-                var specModel = Program.NumberDict[lang]
+                var specModel = Program.NumberWithUnitDict[lang]
                     .Where(typeName => typeName.TypeName.Equals("age", StringComparison.OrdinalIgnoreCase))
                     .FirstOrDefault();
 
@@ -105,9 +105,9 @@ namespace RecognizersTextApp
 
         private void PrepareCurrencyDataList()
         {
-            foreach (var lang in Program.NumberDict.Keys)
+            foreach (var lang in Program.NumberWithUnitDict.Keys)
             {
-                var specModel = Program.NumberDict[lang]
+                var specModel = Program.NumberWithUnitDict[lang]
                     .Where(typeName => typeName.TypeName.Equals("currency", StringComparison.OrdinalIgnoreCase))
                     .FirstOrDefault();
 
@@ -118,9 +118,9 @@ namespace RecognizersTextApp
 
         private void PrepareDimensionDataList()
         {
-            foreach (var lang in Program.NumberDict.Keys)
+            foreach (var lang in Program.NumberWithUnitDict.Keys)
             {
-                var specModel = Program.NumberDict[lang]
+                var specModel = Program.NumberWithUnitDict[lang]
                     .Where(typeName => typeName.TypeName.Equals("dimension", StringComparison.OrdinalIgnoreCase))
                     .FirstOrDefault();
 
@@ -131,9 +131,9 @@ namespace RecognizersTextApp
 
         private void PrepareTemperatureDataList()
         {
-            foreach (var lang in Program.NumberDict.Keys)
+            foreach (var lang in Program.NumberWithUnitDict.Keys)
             {
-                var specModel = Program.NumberDict[lang]
+                var specModel = Program.NumberWithUnitDict[lang]
                     .Where(typeName => typeName.TypeName.Equals("temperature", StringComparison.OrdinalIgnoreCase))
                     .FirstOrDefault();
 

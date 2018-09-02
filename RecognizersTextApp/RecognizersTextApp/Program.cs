@@ -29,11 +29,13 @@ namespace RecognizersTextApp
             };
             Task.WaitAll(tasks);
 
-            BenchmarkRunner.Run<NumberRecognizerMeasure>();
-            BenchmarkRunner.Run<NumberWithUnitRecognizerMeasure>();
-            BenchmarkRunner.Run<DateTimeRecognizerMeasure>();
-            BenchmarkRunner.Run<SequenceRecognizerMeasure>();
-            BenchmarkRunner.Run<ChoiceRecognizerMeasure>();
+            Parallel.Invoke(
+                () => BenchmarkRunner.Run<NumberRecognizerMeasure>(),
+                () => BenchmarkRunner.Run<NumberWithUnitRecognizerMeasure>(),
+                () => BenchmarkRunner.Run<DateTimeRecognizerMeasure>(),
+                () => BenchmarkRunner.Run<SequenceRecognizerMeasure>(),
+                () => BenchmarkRunner.Run<ChoiceRecognizerMeasure>()
+            );
         }
 
         private static IList<string> GetLanguages(string method)
@@ -133,7 +135,7 @@ namespace RecognizersTextApp
             foreach (var lang in langs)
             {
                 var dict = GetSubMethods("NumberWithUnit", lang);
-                NumberDict.Add(lang, dict);
+                NumberWithUnitDict.Add(lang, dict);
             }
         }
 
