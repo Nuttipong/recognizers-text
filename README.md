@@ -112,14 +112,14 @@
 ## Issue Founds
 
 * Microsoft.Recognizers.Text.Number:
-  Scale x1 => No issue
-  Scale x10 => Found issue with RecognizeNumberRange method. It take more execution time when text size large.
-  Scale x100 => Found issue with RecognizeNumberRange method. It take more execution time when text size large.
+  - Scale x1 => No issue
+  - Scale x10 => Found issue with RecognizeNumberRange method. It take more execution time when text size large.
+  - Scale x100 => Found issue with RecognizeNumberRange method. It take more execution time when text size large.
 
 * Microsoft.Recognizers.Text.NumberWithUnit:
-  Scale x1 => No issue
-  Scale x10 => No issue
-  Scale x100 => Found issue with RecognizeCurrency method. It take more execution time when text size large.
+  - Scale x1 => No issue
+  - Scale x10 => No issue
+  - Scale x100 => Found issue with RecognizeCurrency method. It take more execution time when text size large.
   
 * Microsoft.Recognizers.Text.DateTime:
   Scale x1 => No issue
